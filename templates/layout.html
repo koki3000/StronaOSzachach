@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Szachy</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{ url_for('static', filename='ogolny.css')}}">
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="row gora">
+                
+                
+                <div class="menu col">
+                    <a href="{{url_for('zasady')}}">Podstawowe zasady szachów</a>
+                </div>
+                <div class="menu col">
+                    <a href="{{url_for('ruchy')}}">Ruchy bierek</a>
+                </div>
+                <div class="menu col">
+                    <a href="{{url_for('gra')}}">Gra</a>
+                </div>
+            </div>
+        </div>
+
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>
