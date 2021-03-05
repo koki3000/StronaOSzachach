@@ -23,6 +23,6 @@ def ruchy():
 def zasady():
     return render_template("Zasady.html")
 
-@app.route("/wstep")
+@app.route("/")
 def wstep():
     return render_template("Wstep.html")
